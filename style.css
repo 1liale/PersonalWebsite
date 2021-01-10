@@ -36,7 +36,7 @@
 
 .personal-info
 {
-  margin-top: 15%;
+  margin-top: 8%;
   margin-left: auto;
   margin-right: auto;
   width: 300px;
@@ -44,9 +44,9 @@
 
 .name-font 
 {
-  font-family: 'Quicksand', sans-serif;
-  font-weight: 10;
-  font-size: 30px;
+  font-family: 'Trebuchet MS', sans-serif;
+  font-weight: bold;
+  font-size: 50px;
   margin-bottom: 2%;
 }
 
@@ -55,7 +55,7 @@
   font-family: 'Trebuchet MS', sans-serif;
   font-weight: 0.1;
   font-size: 20px;
-  color: #e0dddd;
+  color: #ffffff;
   margin-left: 0.5%
 }
 
@@ -212,6 +212,7 @@ section .ring.ring2
   animation-delay: 5.5s;
   left: 33%;
   bottom: -30%;
+  transform: rotate(-45deg);
 }
 
 section .ring.ring3
@@ -222,6 +223,7 @@ section .ring.ring3
   animation-delay: 11s;
   left: 66%;
   bottom: -33%;
+  transform: rotate(-45deg);
 }
 
 @keyframes rotation
@@ -246,7 +248,7 @@ section .ring.ring3
   background: white;
   justify-content: center;
 }
-
+/*
 #about .bubble-anim
 {
   position: absolute;
@@ -304,7 +306,7 @@ section .ring.ring3
     border-color: rgba(255,255,255,0);
   }
 }
-
+*/
 .description 
 {
   position: relative;
@@ -320,6 +322,13 @@ section .ring.ring3
   padding: 25px 50px;
   box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
   left: 18%;
+}
+
+.about-font
+{
+  font-family: Quicksand, sans-serif;
+  font-size: 15px;
+  font-weight: lighter;
 }
 
 #coding-exp
@@ -363,8 +372,8 @@ section .ring.ring3
 }
 
 .java {width: 100%;  background-color: #2196F3;} 
-.python {width: 50%; background-color: #ffdd00e8;} 
-.cpp {width: 66%; background-color: #ff7300;} 
+.python {width: 66%; background-color: #ffdd00e8;} 
+.cpp {width: 50%; background-color: #ff7300;} 
 .csharp {width: 50%; background-color: #f44336;}
 .html-css {width: 25%; background-color: #4CAF50;} 
 .js {width: 25%; background-color: #a52fb0;} 
