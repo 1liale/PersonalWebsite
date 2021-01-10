@@ -1,0 +1,421 @@
+*
+{
+  margin: 0;
+  padding: 0;
+}
+
+#intro
+{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background:#3589fff1;
+  overflow: hidden;
+}
+
+.container1
+{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap-reverse;
+  justify-content: center;
+  position: relative;
+  top: 30%;
+}
+
+.container > *
+{
+  margin-top: 40px;
+}
+
+.text-display
+{
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.personal-info
+{
+  margin-top: 15%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+}
+
+.name-font 
+{
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 10;
+  font-size: 30px;
+  margin-bottom: 2%;
+}
+
+.bio-font
+{
+  font-family: 'Trebuchet MS', sans-serif;
+  font-weight: 0.1;
+  font-size: 20px;
+  color: #e0dddd;
+  margin-left: 0.5%
+}
+
+.icons i
+{
+  color: black;
+  font-size: 150%;
+  margin-right: 1%;
+}
+.tooltip
+{
+  position: relative;
+}
+
+.tooltip .tooltiptext
+{
+  visibility: hidden;
+  width: 100px;
+  font: Quicksand, sans-serif;
+  font-size: 13px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 10px;
+  padding: 2px 0;
+  
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: 150%;
+  left: 0%;
+}
+
+.tooltip:hover .tooltiptext
+{
+  visibility: visible;
+  cursor: pointer;
+}
+
+.container1 .imagebox
+{
+  width: 225px;
+  height: 225px;
+  margin-top: 0;
+  position: relative;
+  line-height: 0;
+}
+
+img
+{
+  width: auto;
+  height: 100%;
+  position: relative;
+  z-index: 1001;
+  padding: 0px;
+}
+
+section .wave
+{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url(Images/wave.png);
+  background-size: 1000px 100px;
+}
+
+section .wave.wave1 
+{
+  animation: animate1 28s linear infinite;
+  z-index: 1000;
+  opacity: 1;
+  animation-delay: 0s;
+  bottom: 0;
+}
+section .wave.wave2 
+{
+  animation: animate2 14s linear infinite;
+  z-index: 999;
+  opacity: 0.5;
+  animation-delay: -5s;
+  bottom: 10px;
+}
+
+section .wave.wave3 
+{
+  animation: animate 28s linear infinite;
+  z-index: 998;
+  opacity: 0.2;
+  animation-delay: -2s;
+  bottom: 15px;
+}
+
+section .wave.wave4 
+{
+  animation: animate2 14s linear infinite;
+  z-index: 997;
+  opacity: 0.5;
+  animation-delay: -5s;
+  bottom: 20px;
+}
+
+@keyframes animate1
+{
+  0%
+  {
+    background-position-x: 0px;
+  }
+  100%
+  {
+    background-position: 1000px;
+  }
+}
+
+@keyframes animate2 
+{
+  0%
+  {
+    background-position-x: 0px;
+  }
+  100%
+  {
+    background-position: -1000px;
+  }
+}
+
+section .ring
+{
+  position: absolute;
+  width: 60vh;
+  height: 60vh;
+  background: url(Images/fish-ring.png);
+  background-size: 60vh 60vh;
+  -webkit-filter: invert(1);
+  filter: invert(1);
+
+}
+
+section .ring.ring1
+{
+  animation: rotation 10s linear infinite;
+  z-index: 996;
+  opacity: 0.33;
+  animation-delay: 0s;
+  bottom: -25%;
+}
+
+section .ring.ring2
+{
+  animation: rotation 10s linear infinite;
+  z-index: 996;
+  opacity: 0.66;
+  animation-delay: 5.5s;
+  left: 33%;
+  bottom: -30%;
+}
+
+section .ring.ring3
+{
+  animation: rotation 10s linear infinite;
+  z-index: 996;
+  opacity: 1;
+  animation-delay: 11s;
+  left: 66%;
+  bottom: -33%;
+}
+
+@keyframes rotation
+{
+  from
+  {
+    transform: rotate(0deg);
+  }
+  to 
+  {
+    transform: rotate(359deg);
+  }
+}
+
+#about {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  height: 60vh;
+  font-family: sans-serif;
+  background: white;
+  justify-content: center;
+}
+
+#about .bubble-anim
+{
+  position: absolute;
+  top: 12.5%;
+  left: 50%;
+}
+
+.indicator {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+}
+
+.indicator span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border: 0.1875em solid #ffffff;
+  border-radius: 100%;
+  animation: animate-bubble 6s linear infinite;
+}
+
+.indicator span:nth-child(1) {
+  animation-delay: 0s;
+  z-index: 1003;
+}
+
+.indicator span:nth-child(2) {
+  animation-delay: 0.43s;
+  z-index: 1002;
+}
+
+.indicator span:nth-child(3) {
+  animation-delay: 0.86s;
+  z-index: 1001;
+}
+
+@keyframes animate-bubble {
+  0%{
+    border-color: rgb(70, 69, 69, 0);
+    transform: translate(0, 0);
+  }
+  22% {
+    border-color: rgba(255,255,0,0);
+    transform: translate(0px, -150px);
+  }
+  22.1%, 40%
+  {
+    border-color: #ffd64a;
+  } 
+  
+  40.1%, 100% {
+    border-color: rgba(255,255,255,0);
+  }
+}
+
+.description 
+{
+  position: relative;
+  top: 17.5%;
+}
+
+.description .content
+{
+  position: relative;
+  max-width: 55%;
+  background: #fff;
+  border-radius: 10px;
+  padding: 25px 50px;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  left: 18%;
+}
+
+#coding-exp
+{
+  height: 75vh;
+  justify-content: center;
+  overflow: hidden;
+  box-sizing:border-box
+}
+
+.progbar-container
+{
+  position: relative;
+  background: #fff;
+  border-radius: 10px;
+  padding: 25px 50px;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  
+  max-width: 55%;
+  left: 18%;
+
+  text-align: left;
+}
+
+.skillbar
+{
+  height: auto;
+  width: 100%; 
+  background-color: #ddd; 
+  border-radius: 20px;
+}
+
+.skills
+{
+  text-align: right;
+  padding-top: 3px;
+  padding-right: 10px;
+  padding-bottom: 3px;
+  color: white;
+  border-radius: 20px;
+}
+
+.java {width: 100%;  background-color: #2196F3;} 
+.python {width: 50%; background-color: #ffdd00e8;} 
+.cpp {width: 66%; background-color: #ff7300;} 
+.csharp {width: 50%; background-color: #f44336;}
+.html-css {width: 25%; background-color: #4CAF50;} 
+.js {width: 25%; background-color: #a52fb0;} 
+
+#gallery
+{
+  height: 75vh;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.gallery
+{
+  position: relative;
+  max-width: 55%;
+  background: #fff;
+  border-radius: 10px;
+  padding: 25px 50px;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  left: 18%;
+}
+
+.gallery-cell
+{
+  width: 50%;
+  height: 300px;
+  background: #70b7fff1;
+  border-radius: 10px;
+  padding: 12px 12px;
+  margin: 12px;
+}
+
+.gallery-cell:hover
+{
+  cursor: pointer;
+  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+}
+
+.gallery-cell img
+{
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  border-radius: 10px;
+}
+
+
+
+
