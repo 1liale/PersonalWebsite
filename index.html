@@ -5,12 +5,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
         <title>Alex Li</title>
-        <script src="https://kit.fontawesome.com/2abb778c54.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" type="text/css" href="./style.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap">
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
         <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
+        <script defer src="https://kit.fontawesome.com/2abb778c54.js" crossorigin="anonymous"></script>
+        <script defer src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     </head>
     <body> 
         <section id="intro">
@@ -53,13 +55,6 @@
             <div class="ring ring3"></div>
         </section>
         <section id="about">
-            <div class="bubble-anim">
-                <div class="indicator">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>    
-            </div>
 
             <div class="description">
                 <div data-aos="fade-up" data-aos-delay="100" data-aos-offset="300" data-aos-duration="1000" style="text-align:center;">
@@ -164,140 +159,88 @@
             <a href="#intro"><p>Back to the top<p></a>
         </div>
 
-         <!-- Modal Popup -->
-    <div class = "bg-modal">
-        <div class = "modal-content">
-            <div id="gallery-pop1">
-                <h1 style="color: white; font-size: 30px;"> Self-balancing Robot</h1>
-                <br>
-                <img src = "Images/gallery_pic1.jpg" class="hor"> 
-                <br><br>
-                <p style="color: white; font-size: 15px; padding-left: 50px; padding-right: 50px"> 
-                    Designed a self-balancing robot with 
-                    Arduino Nano and MPU6050. It helped me experiment and 
-                    learn in-depth about the PID Controller. 
+        <!-- Modal Popup -->
+        <div class = "bg-modal">
+            <div class = "modal-content">
+                <div id="gallery-pop1">
+                    <h1 style="color: white; font-size: 30px;"> Self-balancing Robot</h1>
+                    <br>
+                    <img src = "Images/gallery_pic1.jpg" class="hor"> 
                     <br><br>
-                    Programmed using C++ and designed all relevant circuitry.     
-                </p> 
-            </div>
+                    <p style="color: white; font-size: 15px; padding-left: 50px; padding-right: 50px"> 
+                        Designed a self-balancing robot with 
+                        Arduino Nano and MPU6050. It helped me experiment and 
+                        learn in-depth about the PID Controller. 
+                        <br><br>
+                        Programmed using C++ and designed all relevant circuitry.     
+                    </p> 
+                </div>
 
-            <div id="gallery-pop2">
-                <h1 style="color: white; font-size: 30px;"> Connect 5 AI</h1>
-                <br>
-                <img src = "Images/gallery_pic6.jpg" class="ver"> 
-                <br><br>
-                <p style="color: white; font-size: 15px; padding-left: 50px; padding-right: 50px"> 
-                    In grade 12, I made a Player vs AI connect 5 hardware project
-                    powered on a Raspberry Pi. This was one of my favourite projects by far. I learned 
-                    from first hand experience how digital monitors worked and even a few things about human psychology. In total, the project had
-                    128 Led lights and 32 wires forming an 8x8 grid. 
-                      
-                </p> 
-            </div>
-
-            <div id="gallery-pop3">
-                <h1 style="color: white; font-size: 30px;"> Mini Quadcopter</h1>
-                <br>
-                <img src = "Images/gallery_pic3.jpg" class="ver"> 
-                <br><br>
-                <p style="color: white; font-size: 15px; padding-left: 50px; padding-right: 50px"> 
-                    The Mini Quadcopter was one of the most technically 
-                    challenging hardware projects I've done. Weight had to be minimized, so I chose 
-                    to place the circuitry on protoboard using an MPU6050 serving as gyro and accelerometer
-                    and a Arduino Micro as its microcontroller. The drone is powered by a 3.7v lithium battery.
+                <div id="gallery-pop2">
+                    <h1 style="color: white; font-size: 30px;"> Connect 5 AI</h1>
+                    <br>
+                    <img src = "Images/gallery_pic6.jpg" class="ver"> 
+                    <br><br>
+                    <p style="color: white; font-size: 15px; padding-left: 50px; padding-right: 50px"> 
+                        In grade 12, I made a Player vs AI connect 5 hardware project
+                        powered on a Raspberry Pi. This was one of my favourite projects by far. I learned 
+                        from first hand experience how digital monitors worked and even a few things about human psychology. In total, the project had
+                        128 Led lights and 32 wires forming an 8x8 grid. 
                         
-                </p> 
-            </div>
+                    </p> 
+                </div>
 
-            <div id="gallery-pop4">
-                <h1 style="color: white; font-size: 30px;"> Quadruped Robot</h1>
-                <br>
-                <img src = "Images/gallery_pic4.jpg" class="hor"> 
-                <br><br>
-                <p style="color: white; font-size: 15px; padding-left: 50px; padding-right: 50px"> 
-                    As a child, I've always found the little Hexbugs sold in toystores to be fascinating.
-                    I wanted to figure out how it worked through hands-on experimentation. Turned out these spider-like quadrupeds
-                    walked in what is called the "Creep Gait", interesting name isn't it? With my curiosity sparked, 
-                    I hopped on Amazon and ordered 12 SG90 servos and went right to work. 
-                </p> 
-            </div>
+                <div id="gallery-pop3">
+                    <h1 style="color: white; font-size: 30px;"> Mini Quadcopter</h1>
+                    <br>
+                    <img src = "Images/gallery_pic3.jpg" class="ver"> 
+                    <br><br>
+                    <p style="color: white; font-size: 15px; padding-left: 50px; padding-right: 50px"> 
+                        The Mini Quadcopter was one of the most technically 
+                        challenging hardware projects I've done. Weight had to be minimized, so I chose 
+                        to place the circuitry on protoboard using an MPU6050 serving as gyro and accelerometer
+                        and a Arduino Micro as its microcontroller. The drone is powered by a 3.7v lithium battery.
+                            
+                    </p> 
+                </div>
 
-            <div id="gallery-pop5">
-                <h1 style="color: white; font-size: 30px;"> Ping Pong Turret</h1>
-                <br>
-                <img src = "Images/gallery_pic5.jpg" class="ver"> 
-                <br><br>
-                <p style="color: white; font-size: 15px; padding-left: 50px; padding-right: 50px"> 
-                    For my culminating task in grade 12 tech engineering class, I made a ping pong ball turret that 
-                    was wirelessly controlled. The command is sent via ssh from a thrid party app on my mobile device,
-                    then the Raspberry Pi interprets and executes the command. The stepping motor controls the turrets 
-                    rotations and the servo releases the ball from the collector.
-                </p> 
+                <div id="gallery-pop4">
+                    <h1 style="color: white; font-size: 30px;"> Quadruped Robot</h1>
+                    <br>
+                    <img src = "Images/gallery_pic4.jpg" class="hor"> 
+                    <br><br>
+                    <p style="color: white; font-size: 15px; padding-left: 50px; padding-right: 50px"> 
+                        As a child, I've always found the little Hexbugs sold in toystores to be fascinating.
+                        I wanted to figure out how it worked through hands-on experimentation. Turned out these spider-like quadrupeds
+                        walked in what is called the "Creep Gait", interesting name isn't it? With my curiosity sparked, 
+                        I hopped on Amazon and ordered 12 SG90 servos and went right to work. 
+                    </p> 
+                </div>
+
+                <div id="gallery-pop5">
+                    <h1 style="color: white; font-size: 30px;"> Ping Pong Turret</h1>
+                    <br>
+                    <img src = "Images/gallery_pic5.jpg" class="ver"> 
+                    <br><br>
+                    <p style="color: white; font-size: 15px; padding-left: 50px; padding-right: 50px"> 
+                        For my culminating task in grade 12 tech engineering class, I made a ping pong ball turret that 
+                        was wirelessly controlled. The command is sent via ssh from a thrid party app on my mobile device,
+                        then the Raspberry Pi interprets and executes the command. The stepping motor controls the turrets 
+                        rotations and the servo releases the ball from the collector.
+                    </p> 
+                </div>
+            
             </div>
-        
+            <div class="close">+</div>
         </div>
-        <div class="close">+</div>
-    </div>
 
-    <script>
-        var curItem = '';
-        var itemsList1 = ['cell1','cell2','cell3','cell4','cell5'];
-        var itemsList2 = ['#gallery-pop1','#gallery-pop2','#gallery-pop3','#gallery-pop4','#gallery-pop5'];
-
-        document.getElementById(itemsList1[0]).addEventListener("click",
-            function()
-            {
-                document.querySelector('.bg-modal').style.display = 'flex';
-                document.querySelector(itemsList2[0]).style.visibility = 'visible';
-                curItem = itemsList2[0];
-            });
-
-        document.getElementById(itemsList1[1]).addEventListener("click",
-            function()
-            {
-                document.querySelector('.bg-modal').style.display = 'flex';
-                document.querySelector(itemsList2[1]).style.visibility = 'visible';
-                curItem = itemsList2[1];
-            });
-
-    
-        document.getElementById(itemsList1[2]).addEventListener("click",
-            function()
-            {
-                document.querySelector('.bg-modal').style.display = 'flex';
-                document.querySelector(itemsList2[2]).style.visibility = 'visible';
-                curItem = itemsList2[2];
-            });
-
-        document.getElementById(itemsList1[3]).addEventListener("click",
-            function()
-            {
-                document.querySelector('.bg-modal').style.display = 'flex';
-                document.querySelector(itemsList2[3]).style.visibility = 'visible';
-                curItem = itemsList2[3];
-            });
-
-        document.getElementById(itemsList1[4]).addEventListener("click",
-            function()
-            {
-                document.querySelector('.bg-modal').style.display = 'flex';
-                document.querySelector(itemsList2[4]).style.visibility = 'visible';
-                curItem = itemsList2[4];
-            });
-
-        document.querySelector('.close').addEventListener("click", 
-        function() {
-            document.querySelector('.bg-modal').style.display = 'none';
-            document.querySelector(curItem).style.visibility = 'hidden';
-            curItem = '';
-        });
-    </script>
-        
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-        <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+        <script type="text/javascript" src="./gallery.js"></script>
         <script>
             AOS.init();
+            loadGallery();
         </script>
+        
     </body>
 
    

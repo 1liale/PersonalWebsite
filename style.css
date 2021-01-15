@@ -248,65 +248,7 @@ section .ring.ring3
   background: white;
   justify-content: center;
 }
-/*
-#about .bubble-anim
-{
-  position: absolute;
-  top: 12.5%;
-  left: 50%;
-}
 
-.indicator {
-  position: absolute;
-  width: 20px;
-  height: 20px;
-}
-
-.indicator span {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  border: 0.1875em solid #ffffff;
-  border-radius: 100%;
-  animation: animate-bubble 6s linear infinite;
-}
-
-.indicator span:nth-child(1) {
-  animation-delay: 0s;
-  z-index: 1003;
-}
-
-.indicator span:nth-child(2) {
-  animation-delay: 0.43s;
-  z-index: 1002;
-}
-
-.indicator span:nth-child(3) {
-  animation-delay: 0.86s;
-  z-index: 1001;
-}
-
-@keyframes animate-bubble {
-  0%{
-    border-color: rgb(70, 69, 69, 0);
-    transform: translate(0, 0);
-  }
-  22% {
-    border-color: rgba(255,255,0,0);
-    transform: translate(0px, -150px);
-  }
-  22.1%, 40%
-  {
-    border-color: #ffd64a;
-  } 
-  
-  40.1%, 100% {
-    border-color: rgba(255,255,255,0);
-  }
-}
-*/
 .description 
 {
   position: relative;
@@ -375,7 +317,7 @@ section .ring.ring3
 .python {width: 66%; background-color: #ffdd00e8;} 
 .cpp {width: 50%; background-color: #ff7300;} 
 .csharp {width: 50%; background-color: #f44336;}
-.html-css {width: 25%; background-color: #4CAF50;} 
+.html-css {width: 25%; background-color: #38de3e;} 
 .js {width: 25%; background-color: #a52fb0;} 
 
 #gallery
