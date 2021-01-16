@@ -13,6 +13,7 @@
 
         <script defer src="https://kit.fontawesome.com/2abb778c54.js" crossorigin="anonymous"></script>
         <script defer src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+        <script defer src="./api_reference.js"></script>
     </head>
     <body> 
         <section id="intro">
@@ -153,14 +154,30 @@
             </div>
         </section>
 
+        <section id="inspiring-quote">
+            <div data-aos="fade-up" data-aos-delay="100" data-aos-offset="300" data-aos-duration="1000" style="text-align:center;">
+                <h1 class="name-font">Be Inspired!</h1>
+            </div>
+            <br>
+            <div data-aos="fade-up" data-aos-delay="100" data-aos-offset="300" data-aos-duration="1000" style="text-align:center;">
+                <div class="quote-container">
+                    <div class="quote-font" id="quote"></div>
+                    <br>
+                    <div class="quote-font" id= "author"></div>
+                    <br>
+                    <i class="far fa-clipboard" id="copy-pasta" onclick="copy-pasta()"></i>
+                </div>
+            </div>
+        </section>
+
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
         <script>
             AOS.init();
         </script>
 
         <div style="text-align: center;">
-            <p>Made by Alex Li 2020</p>
-            <a href="#intro"><p>Back to the top<p></a>
+            <p class="about-font">Made by Alex Li 2021</p>
+            <a href="#intro"><p class="about-font">Back to the top<p></a>
         </div>
 
         <!-- Modal Popup -->
@@ -239,10 +256,14 @@
         </div>
         <script type="text/javascript" src="./gallery.js"></script>
         <script>
-            loadGallery();
+            loadGallery(5);
         </script>
         
     </body>
 
    
 </html>
+
+<!-- To be used later 
+    <i class="far fa-clipboard"></i> (normal icon)
+    <i class="fas fa-clipboard"></i> (solid icon) -->
