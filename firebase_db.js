@@ -12,6 +12,7 @@
         appId: "1:599690870992:web:6a377521e6f2c4e02c9ed5",
         measurementId: "G-T534RVFLC5"
     };
+    console.log(config.SECRET_API_KEY);
 
     // Initialize Firebase
     firebase.initializeApp(firebaseConfig);
