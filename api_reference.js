@@ -6,7 +6,7 @@
 */
 
 // API source
-const url = "https://api.quotable.io/random"
+const url = "https://api.quotable.io/random" 
 
 // Generates a random quote from API
 function generateQuote() {
@@ -29,6 +29,6 @@ function generateQuote() {
 
 generateQuote();
 
-// Generate quote at set intervals (10 seconds)
+// Generate quote at set intervals (I set to 7 seconds)
 setInterval(generateQuote, 7000);
 

@@ -1,21 +1,24 @@
+/*
+* Author: Alex Li
+* Created On: January 9, 2021
+* Purpose: Manages 
+*/
+
 var curItem = '';
 
 function loadModal(i) {
-    var itemsList1 = ['cell1','cell2','cell3','cell4','cell5'];
-    var itemsList2 = ['#gallery-pop1','#gallery-pop2','#gallery-pop3','#gallery-pop4','#gallery-pop5'];
-
-    document.getElementById(itemsList1[i]).addEventListener("click",
-            function()
-            {
-                document.querySelector('.bg-modal').style.display = 'flex';
-                document.querySelector(itemsList2[i]).style.visibility = 'visible';
-                curItem = itemsList2[i];
-            });
+    document.getElementById('cell'+i).addEventListener("click",
+        function()
+        {
+            document.querySelector('.bg-modal').style.display = 'flex';
+            document.querySelector('#gallery-pop'+i).style.visibility = 'visible';
+            curItem = '#gallery-pop'+i;
+        });
 }
 
 function loadGallery(size){
 
-    for (var i = 0; i < size; i++)
+    for (var i = 1; i < size + 1; i++)
     {
         loadModal(i);
     }

@@ -14,8 +14,14 @@
         <script defer src="https://kit.fontawesome.com/2abb778c54.js" crossorigin="anonymous"></script>
         <script defer src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
         <script defer src="./api_reference.js"></script>
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-database.js"></script>
     </head>
     <body> 
+        <script src="./timeme.js"></script>
         <section id="intro">
             <div class="container1">
                 <div class="text-display">
@@ -165,20 +171,51 @@
                     <br>
                     <div class="quote-font" id= "author"></div>
                     <br>
-                    <i class="far fa-clipboard" id="copy-pasta" onclick="copy-pasta()"></i>
+                    
+                </div>
+            
+            </div>
+        </section>
+
+        <section id="data-display">
+            <div data-aos="fade-up" data-aos-delay="100" data-aos-offset="300" data-aos-duration="1000" style="text-align:center;">
+                <h1 class="about">Database Display</h1>
+            </div>
+
+            <div data-aos="fade-up" data-aos-delay="100" data-aos-offset="300" data-aos-duration="1000" style="justify-content:center;">
+                <div id="piechart1"></div>
+                <div id="piechart2"></div>
+            </div>
+            
+        </section>
+
+        <section id="data-description">
+
+            <div data-aos="fade-up" data-aos-delay="100" data-aos-offset="300" data-aos-duration="1000">
+                <div id="data-textbox">
+                    <h1>What Does The Data Represent?</h1>
+                    <br>
+                    <p style="color: rgba(0,0,0,0.6); font-size: 18px; text-align: left; padding-left: 50px; padding-right: 50px">
+                        The pie charts above are used to represent the relative amount of time users spend on each section of my website. <br>
+                        The user activity is first collected and used to update the user's chart in realtime. Afterwards, it is written to Firebase's realtime database (noSQL) at the end of each session.
+                        Each time the website is accessed, data is read from the database and used to display the Avg Time per Section % pie chart.  
+                    </p> 
+                    
                 </div>
             </div>
         </section>
+
+        <div style="text-align: center;">
+            <p class="about-font">Made by Alex Li 2021</p>
+            <a href="#intro"><p class="about-font">Back to the top<p></a>
+            <br>
+        </div>
 
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
         <script>
             AOS.init();
         </script>
 
-        <div style="text-align: center;">
-            <p class="about-font">Made by Alex Li 2021</p>
-            <a href="#intro"><p class="about-font">Back to the top<p></a>
-        </div>
 
         <!-- Modal Popup -->
         <div class = "bg-modal">
@@ -258,12 +295,10 @@
         <script>
             loadGallery(5);
         </script>
-        
+
+        <script src="./firebase_db.js"></script>
+        <script src="./pie_chart.js"></script>
     </body>
 
    
 </html>
-
-<!-- To be used later 
-    <i class="far fa-clipboard"></i> (normal icon)
-    <i class="fas fa-clipboard"></i> (solid icon) -->
