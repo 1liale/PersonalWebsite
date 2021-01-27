@@ -23,6 +23,7 @@ function generateQuote() {
     })
     .catch(function(err) {
         console.log(err);
+        document.getElementById("quote").innerHTML = "Sorry Api.quotable.io is currently down, server not responding";
     });
     
 }
