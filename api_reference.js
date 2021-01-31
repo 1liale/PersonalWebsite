@@ -1,25 +1,15 @@
-/*
-* Purpose: For testing and learning api (not my code)
-* Credited to: Asaolu Elijah 
-* link at: https://dev.to/asaoluelijah/understanding-fetch-2-building-a-random-quote-generator-app-25nj
-* Note: I am currently learning to make my own web api in .Net
-*/
 
 // API source
-const url = "https://api.quotable.io/random" 
-
+// const url = "https://api.quotable.io/random" 
+const url = "https://us-central1-fir-practice-67869.cloudfunctions.net/app/api/generate-quote"
 // Generates a random quote from API
 function generateQuote() {
     // Fetches from API
     fetch(url)
-    .then(function(data){
-        // Retrieves data from the Json file
-        return data.json();
-    })
-    // retrieves content and writes to html
-    .then(function(data) {
-        document.getElementById("quote").innerHTML = data.content;
-        document.querySelector("#author").innerHTML = "- " + data.author;
+    .then(res => res.json())
+    .then((out) => {
+        document.getElementById("quote").innerHTML = out[0].quote;
+        document.querySelector("#author").innerHTML = "- " + out[0].author;
     })
     .catch(function(err) {
         console.log(err);
