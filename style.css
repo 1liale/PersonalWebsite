@@ -46,7 +46,15 @@
 {
   font-family: 'Trebuchet MS', sans-serif;
   font-weight: bold;
-  font-size: 50px;
+  font-size: 60px;
+  margin-bottom: 2%;
+}
+
+.title-font 
+{
+  font-family: 'Trebuchet MS', sans-serif;
+  font-weight: bold;
+  font-size: 350%;
   margin-bottom: 2%;
 }
 
@@ -59,8 +67,10 @@
   margin-left: 0.5%
 }
 
+
 .icons i
 {
+  position: relative;
   color: black;
   font-size: 150%;
   margin-right: 1%;
@@ -240,31 +250,31 @@ section .ring.ring3
 
 #about {
   position: relative;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  height: 60vh;
+  min-height: 50vh;
+  max-height: 90vh;
   font-family: sans-serif;
   background: white;
-  justify-content: center;
   overflow: hidden;
 }
 
 .description 
 {
   position: relative;
-  top: 17.5%;
+  top: 15%;
+  justify-content: center;
+  align-items: center;
 }
 
 .description .content
 {
-  position: relative;
+  margin-bottom: 5%;
   max-width: 55%;
+  margin-left:22.5%;
+  margin-right:22.5%;
   background: #fff;
   border-radius: 10px;
   padding: 25px 50px;
   box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
-  left: 18%;
 }
 
 .about-font
@@ -278,6 +288,7 @@ section .ring.ring3
 {
   height: 75vh;
   justify-content: center;
+  align-items:center;
   overflow: hidden;
   box-sizing:border-box
 }
@@ -289,10 +300,9 @@ section .ring.ring3
   border-radius: 10px;
   padding: 25px 50px;
   box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
-  
-  max-width: 55%;
-  left: 18%;
-
+  max-width: 70%;
+  margin-left:15%;
+  margin-right:15%;
   text-align: left;
 }
 
@@ -323,7 +333,8 @@ section .ring.ring3
 
 #gallery
 {
-  height: 75vh;
+  min-height: 75vh;
+  max-height: 90vh;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   justify-content: center;
@@ -334,12 +345,13 @@ section .ring.ring3
 .gallery
 {
   position: relative;
-  max-width: 55%;
+  max-width: 70%;
+  margin-left:15%;
+  margin-right:15%;
   background: #fff;
   border-radius: 10px;
   padding: 25px 50px;
   box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
-  left: 18%;
 }
 
 .gallery-cell
@@ -461,7 +473,7 @@ section .ring.ring3
 
 #inspiring-quote
 {
-  height: 50vh;
+  min-height: 50vh;
   justify-content: center;
   align-items: center;
   overflow: hidden;
@@ -476,8 +488,9 @@ section .ring.ring3
   text-align: center;
   padding: 25px 50px;
   box-shadow: 0px 20px 40px -14px rgba(0, 0, 0, 0.25);
-  width: 55%;
-  left: 18%;
+  max-width: 70%;
+  margin-left:15%;
+  margin-right:15%;
 }
 
 .quote-font
@@ -495,10 +508,10 @@ section .ring.ring3
 {
   align-items: center;
   justify-content: center;
-  height: 60vh;
+  min-height: 60vh;
   width: 100%;
   background: white;
-  overflow: hidden;
+  overflow-wrap: auto;
 }
 
 #piechart1
@@ -521,18 +534,20 @@ section .ring.ring3
   text-align: center;
   padding: 25px 50px;
   box-shadow: 0px 20px 40px -14px rgba(0, 0, 0, 0.25);
-  width: 55%;
-  left: 18%;
+  max-width: 70%;
+  margin-left: 15%;
+  margin-right: 15%;
 }
 
 #data-description
 {
   align-items: center;
   justify-content: center;
-  height: 30vh;
+  height: auto;
   width: 100%;
   background: white;
-  overflow: hidden;
+  overflow: hidden-x;
+  margin-bottom: 5%;
 }
 
 

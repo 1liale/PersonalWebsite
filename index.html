@@ -1,310 +1,331 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-        <title>Alex Li</title>
-        <link rel="stylesheet" type="text/css" href="./style.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap">
-        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
-        <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">-->
 
-        <script defer src="https://kit.fontawesome.com/2abb778c54.js" crossorigin="anonymous"></script>
-        <script defer src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-        <script defer src="./api_reference.js"></script>
-        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Alex Li</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <script src="https://kit.fontawesome.com/2abb778c54.js" crossorigin="anonymous"></script>
+    <script defer src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script defer src="./api_reference.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 
-        <!-- The core Firebase JS SDK is always required and must be listed first -->
-        <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-app.js"></script>
-        <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-database.js"></script>
-    </head>
-    <body> 
-        <script src="./timeme.js"></script>
-        <section id="intro">
-            <div class="container1">
-                <div class="text-display">
-                    <div class="personal-info">
-                        <h1 class="name-font">Alex Li</h1>
-                        <br>
-                        <p class="bio-font">UW Computer Science 2025 </p>
-                    </div> 
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-database.js"></script>
+</head>
+
+<body>
+    <script src="./timeme.js"></script>
+    <section id="intro">
+        <div class="container1">
+            <div class="text-display">
+                <div class="personal-info">
+                    <h1 class="name-font">Alex Li</h1>
                     <br>
-                    <div class="icons">
-                        <a href="https://github.com/1liale"><i class="fab fa-github tool tooltip">
+                    <p class="bio-font">UW Computer Science 2025 </p>
+                </div>
+                <br>
+                <div class="icons">
+                    <a href="https://github.com/1liale"><i class="fab fa-github tool tooltip">
                             <span class="tooltiptext">Github</span>
                         </i></a>
-                        <a href="https://www.linkedin.com/in/alex-li-3b7810165/"><i class="fab fa-linkedin  tooltip">
+                    <a href="https://www.linkedin.com/in/alex-li-3b7810165/"><i class="fab fa-linkedin  tooltip">
                             <span class="tooltiptext">Linkedin</span>
                         </i></a>
-                        <a href="mailto:a336li@uwaterloo.ca"><i class="fas fa-envelope-square tooltip">
+                    <a href="mailto:a336li@uwaterloo.ca"><i class="fas fa-envelope-square tooltip">
                             <span class="tooltiptext">Email</span>
                         </i></a>
-                        <a href="Images/Resume.pdf"><i class="fas fa-file-pdf tooltip">
+                    <a href="Images/Resume.pdf"><i class="fas fa-file-pdf tooltip">
                             <span class="tooltiptext">Resume</span>
                         </i></a>
-                    </div>
-                </div>
-
-                <div class="imagebox">
-                    <img src="Images/ProfilePic.png">
                 </div>
             </div>
-            
-            <div class="wave wave1"></div>
-            <div class="wave wave2"></div>
-            <div class="wave wave3"></div>
-            <div class="wave wave4"></div>
 
-            <div class="ring ring1"></div>
-            <div class="ring ring2"></div>
-            <div class="ring ring3"></div>
-        </section>
-        <section id="about">
+            <div class="imagebox">
+                <img src="Images/ProfilePic.png">
+            </div>
+        </div>
 
-            <div class="description">
-                <div data-aos="fade-up" data-aos-delay="100" data-aos-offset="300" data-aos-duration="1000" style="text-align:center;">
-                    <h1 class="name-font">About Me</h1>
+        <div class="wave wave1"></div>
+        <div class="wave wave2"></div>
+        <div class="wave wave3"></div>
+        <div class="wave wave4"></div>
+
+        <div class="ring ring1"></div>
+        <div class="ring ring2"></div>
+        <div class="ring ring3"></div>
+    </section>
+    <section id="about">
+
+        <div class="description">
+            <div data-aos="fade-up" data-aos-delay="100" data-aos-offset="300" data-aos-duration="1000"
+                style="text-align:center;">
+                <h1 class="title-font">About Me</h1>
+            </div>
+
+            <br>
+
+            <div data-aos="fade-up" data-aos-delay="100" data-aos-offset="300" data-aos-duration="1000"
+                style="text-align:center;" class="content">
+                <p class="about-font"> Hi, my name is Alex. I am a first year Computer Science student at the University
+                    of Waterloo.
+                    <br><br>
+                    I like to describe myself as being driven by first principles thinking. Rather than accepting
+                    problems as they are, I enjoy breaking them down into subproblems and
+                    figuring out all the intricate details.
+                    <br><br>
+                    I am deeply motivated to learn about all things tech related. I am especially interested in the
+                    fields of robotics, game design, and artificial intelligence.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section id="coding-exp">
+        <div data-aos="fade-up" data-aos-delay="100" data-aos-offset="300" data-aos-duration="1000"
+            style="text-align:center;">
+            <h1 class="title-font">Practical Experience</h1>
+        </div>
+
+        <br>
+
+        <div data-aos="fade-up" data-aos-delay="100" data-aos-offset="300" data-aos-duration="1000"
+            style="text-align:center;">
+            <div class="progbar-container">
+                <p>Java</p>
+                <div class="skillbar">
+                    <div class="skills java">2 years</div>
                 </div>
 
                 <br>
 
-                <div data-aos="fade-up" data-aos-delay="100" data-aos-offset="300" data-aos-duration="1000" style="text-align:center;" class="content">
-                    <p class="about-font"> Hi, my name is Alex. I am a first year Computer Science student at the University of Waterloo. 
-                    <br><br>
-                    I like to describe myself as being driven by first principles thinking. Rather than accepting problems as they are, I enjoy breaking them down into subproblems and 
-                    figuring out all the intricate details. 
-                    <br><br>
-                    I am deeply motivated to learn about all things tech related. I am especially interested in the fields of robotics, game design, and artificial intelligence.
-                    </p>
+                <p>Python</p>
+                <div class="skillbar">
+                    <div class="skills python">8 months</div>
                 </div>
-            </div>
-        </section>   
 
-        <section id="coding-exp">
-            <div data-aos="fade-up" data-aos-delay="100" data-aos-offset="300" data-aos-duration="1000" style="text-align:center;">
-                <h1 class="name-font">Practical Experience</h1>
-            </div>
-            
-            <br>
-            
-            <div data-aos="fade-up" data-aos-delay="100" data-aos-offset="300" data-aos-duration="1000" style="text-align:center;">
-                <div class="progbar-container">
-                    <p>Java</p>
-                    <div class="skillbar">
-                        <div class="skills java">2 years</div>
-                    </div>
-
-                    <br>
-
-                    <p>Python</p>
-                    <div class="skillbar">
-                        <div class="skills python">8 months</div>
-                    </div>
-
-                    <br>
-
-                    <p>C++</p>
-                    <div class="skillbar">
-                        <div class="skills cpp">6 months</div>
-                    </div>
-
-                    <br>
-
-                    <p>C#</p>
-                    <div class="skillbar">
-                        <div class="skills csharp">6 months</div>
-                    </div>
-
-                    <br>
-
-                    <p>HTML/CSS</p>
-                    <div class="skillbar">
-                        <div class="skills html-css">3 months</div>
-                    </div>
-
-                    <br>
-
-                    <p>JavaScript</p>
-                    <div class="skillbar">
-                        <div class="skills js">3 months</div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="gallery">
-            <div data-aos="fade-up" data-aos-delay="100" data-aos-offset="300" data-aos-duration="1000" style="text-align:center;">
-                <h1 class="name-font">Project Gallery</h1>
-            </div>
-
-            <div data-aos="fade-up" data-aos-delay="100" data-aos-offset="300" data-aos-duration="1000" style="text-align:center;">
-                <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true }'>
-                    <div class="gallery-cell" id="cell1">
-                        <img src="Images/gallery_pic1.jpg">
-                    </div>
-                    <div class="gallery-cell" id="cell2">
-                        <img src="Images/gallery_pic6.jpg">
-                    </div>
-                    <div class="gallery-cell" id="cell3">
-                        <img src="Images/gallery_pic3.jpg">
-                    </div>
-                    <div class="gallery-cell" id="cell4">
-                        <img src="Images/gallery_pic4.jpg">
-                    </div>
-                    <div class="gallery-cell" id="cell5">
-                        <img src="Images/gallery_pic5.jpg">
-                    </div>
-                  </div>
-            </div>
-        </section>
-
-        <section id="inspiring-quote">
-            <div data-aos="fade-up" data-aos-delay="100" data-aos-offset="300" data-aos-duration="1000" style="text-align:center;">
-                <h1 class="name-font">Be Inspired!</h1>
-            </div>
-            <br>
-            <div data-aos="fade-up" data-aos-delay="100" data-aos-offset="300" data-aos-duration="1000" style="text-align:center;">
-                <div class="quote-container">
-                    <div class="quote-font" id="quote"></div>
-                    <br>
-                    <div class="quote-font" id= "author"></div>
-                    <br>
-                </div>
                 <br>
-                <!--<form class = "search-box" action="./api_reference.js" style="margin:auto;max-width:300px"> 
+
+                <p>C++</p>
+                <div class="skillbar">
+                    <div class="skills cpp">6 months</div>
+                </div>
+
+                <br>
+
+                <p>C#</p>
+                <div class="skillbar">
+                    <div class="skills csharp">6 months</div>
+                </div>
+
+                <br>
+
+                <p>HTML/CSS</p>
+                <div class="skillbar">
+                    <div class="skills html-css">3 months</div>
+                </div>
+
+                <br>
+
+                <p>JavaScript</p>
+                <div class="skillbar">
+                    <div class="skills js">3 months</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery">
+        <div data-aos="fade-up" data-aos-delay="100" data-aos-offset="300" data-aos-duration="1000"
+            style="text-align:center;">
+            <h1 class="title-font">Project Gallery</h1>
+        </div>
+
+        <div data-aos="fade-up" data-aos-delay="100" data-aos-offset="300" data-aos-duration="1000"
+            style="text-align:center;">
+            <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true }'>
+                <div class="gallery-cell" id="cell1">
+                    <img src="Images/gallery_pic1.jpg">
+                </div>
+                <div class="gallery-cell" id="cell2">
+                    <img src="Images/gallery_pic6.jpg">
+                </div>
+                <div class="gallery-cell" id="cell3">
+                    <img src="Images/gallery_pic3.jpg">
+                </div>
+                <div class="gallery-cell" id="cell4">
+                    <img src="Images/gallery_pic4.jpg">
+                </div>
+                <div class="gallery-cell" id="cell5">
+                    <img src="Images/gallery_pic5.jpg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="inspiring-quote">
+        <div data-aos="fade-up" data-aos-delay="100" data-aos-offset="300" data-aos-duration="1000"
+            style="text-align:center;">
+            <h1 class="title-font">Be Inspired!</h1>
+        </div>
+        <br>
+        <div data-aos="fade-up" data-aos-delay="100" data-aos-offset="300" data-aos-duration="1000"
+            style="text-align:center;">
+            <div class="quote-container">
+                <div class="quote-font" id="quote"></div>
+                <br>
+                <div class="quote-font" id="author"></div>
+                <br>
+            </div>
+            <br>
+            <!--<form class = "search-box" action="./api_reference.js" style="margin:auto;max-width:300px"> 
                     <input type="text" placeholder="To be or..." name="search">
                     <button type="submit">
                         <i class="fa fa-search"></i>
                     </button>
                 </form>-->
-            </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="data-display">
-            <div data-aos="fade-up" data-aos-delay="100" data-aos-offset="300" data-aos-duration="1000" style="text-align:center;">
-                <h1 class="about">Database Display</h1>
-            </div>
-
-            <div data-aos="fade-up" data-aos-delay="100" data-aos-offset="300" data-aos-duration="1000" style="justify-content:center;">
-                <div id="piechart1"></div>
-                <div id="piechart2"></div>
-            </div>
-            
-        </section>
-
-        <section id="data-description">
-
-            <div data-aos="fade-up" data-aos-delay="100" data-aos-offset="300" data-aos-duration="1000">
-                <div id="data-textbox">
-                    <h1>What Does The Data Represent?</h1>
-                    <br>
-                    <p style="color: rgba(0,0,0,0.6); font-size: 18px; text-align: left; padding-left: 50px; padding-right: 50px">
-                        The pie charts above are used to represent the relative amount of time users spend on each section of my website. <br>
-                        The user activity is first collected and used to update the user's chart in realtime. Afterwards, it is written to Firebase's realtime database (noSQL) at the end of each session.
-                        Each time the website is accessed, data is read from the database and used to display the Avg Time per Section % pie chart.  
-                    </p> 
-                    
-                </div>
-            </div>
-        </section>
-
-        <div style="text-align: center;">
-            <p class="about-font">Made by Alex Li 2021</p>
-            <a href="#intro"><p class="about-font">Back to the top<p></a>
-            <br>
+    <section id="data-display">
+        <div data-aos="fade-up" data-aos-delay="100" data-aos-offset="300" data-aos-duration="1000"
+            style="text-align:center;">
+            <h1 class="title-font">Database Display</h1>
         </div>
 
-        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-        <script>
-            AOS.init();
-        </script>
-
-
-        <!-- Modal Popup -->
-        <div class = "bg-modal">
-            <div class = "modal-content">
-                <div id="gallery-pop1">
-                    <h1 style="color: white; font-size: 30px;"> Self-balancing Robot</h1>
-                    <br>
-                    <img src = "Images/gallery_pic1.jpg" class="hor"> 
-                    <br><br>
-                    <p style="color: white; font-size: 15px; padding-left: 50px; padding-right: 50px"> 
-                        Designed a self-balancing robot with 
-                        Arduino Nano and MPU6050. It helped me experiment and 
-                        learn in-depth about the PID Controller. 
-                        <br><br>
-                        Programmed using C++ and designed all relevant circuitry.     
-                    </p> 
-                </div>
-
-                <div id="gallery-pop2">
-                    <h1 style="color: white; font-size: 30px;"> Connect 5 AI</h1>
-                    <br>
-                    <img src = "Images/gallery_pic6.jpg" class="ver"> 
-                    <br><br>
-                    <p style="color: white; font-size: 15px; padding-left: 50px; padding-right: 50px"> 
-                        In grade 12, I made a Player vs AI connect 5 hardware project
-                        powered on a Raspberry Pi. This was one of my favourite projects by far. I learned 
-                        from first hand experience how digital monitors worked and even a few things about human psychology. In total, the project had
-                        128 Led lights and 32 wires forming an 8x8 grid. 
-                        
-                    </p> 
-                </div>
-
-                <div id="gallery-pop3">
-                    <h1 style="color: white; font-size: 30px;"> Mini Quadcopter</h1>
-                    <br>
-                    <img src = "Images/gallery_pic3.jpg" class="ver"> 
-                    <br><br>
-                    <p style="color: white; font-size: 15px; padding-left: 50px; padding-right: 50px"> 
-                        The Mini Quadcopter was one of the most technically 
-                        challenging hardware projects I've done. Weight had to be minimized, so I chose 
-                        to place the circuitry on protoboard using an MPU6050 serving as gyro and accelerometer
-                        and a Arduino Micro as its microcontroller. The drone is powered by a 3.7v lithium battery.
-                            
-                    </p> 
-                </div>
-
-                <div id="gallery-pop4">
-                    <h1 style="color: white; font-size: 30px;"> Quadruped Robot</h1>
-                    <br>
-                    <img src = "Images/gallery_pic4.jpg" class="hor"> 
-                    <br><br>
-                    <p style="color: white; font-size: 15px; padding-left: 50px; padding-right: 50px"> 
-                        As a child, I've always found the little Hexbugs sold in toystores to be fascinating.
-                        I wanted to figure out how it worked through hands-on experimentation. Turned out these spider-like quadrupeds
-                        walked in what is called the "Creep Gait", interesting name isn't it? With my curiosity sparked, 
-                        I hopped on Amazon and ordered 12 SG90 servos and went right to work. 
-                    </p> 
-                </div>
-
-                <div id="gallery-pop5">
-                    <h1 style="color: white; font-size: 30px;"> Ping Pong Turret</h1>
-                    <br>
-                    <img src = "Images/gallery_pic5.jpg" class="ver"> 
-                    <br><br>
-                    <p style="color: white; font-size: 15px; padding-left: 50px; padding-right: 50px"> 
-                        For my culminating task in grade 12 tech engineering class, I made a ping pong ball turret that 
-                        was wirelessly controlled. The command is sent via ssh from a thrid party app on my mobile device,
-                        then the Raspberry Pi interprets and executes the command. The stepping motor controls the turrets 
-                        rotations and the servo releases the ball from the collector.
-                    </p> 
-                </div>
-            
-            </div>
-            <div class="close">+</div>
+        <div data-aos="fade-up" data-aos-delay="100" data-aos-offset="300" data-aos-duration="1000"
+            style="justify-content:center;">
+            <div id="piechart1"></div>
+            <div id="piechart2"></div>
         </div>
-        <script type="text/javascript" src="./gallery.js"></script>
-        <script>
-            loadGallery(5);
-        </script>
 
-        <script src="./firebase_db.js"></script>
-        <script src="./pie_chart.js"></script>
-    </body>
+    </section>
 
-   
+    <section id="data-description">
+
+        <div data-aos="fade-up" data-aos-delay="100" data-aos-offset="300" data-aos-duration="1000">
+            <div id="data-textbox">
+                <h1>What Does The Data Represent?</h1>
+                <br>
+                <p
+                    style="color: rgba(0,0,0,0.6); font-size: 18px; text-align: left; padding-left: 50px; padding-right: 50px">
+                    The pie charts above are used to represent the relative amount of time users spend on each section
+                    of my website. <br>
+                    The user activity is first collected and used to update the user's chart in real-time. Afterwards,
+                    it
+                    is written to Firebase's real-time database at the end of each session.
+                    Each time the website is accessed, data is read from the database and used to display the Avg Time
+                    per Section % pie chart.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <div style="text-align: center;">
+        <p class="about-font">Made by Alex Li 2021</p>
+        <a href="#intro">
+            <p class="about-font">Back to the top<p>
+        </a>
+        <br>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+
+    <!-- Modal Popup -->
+    <div class="bg-modal">
+        <div class="modal-content">
+            <div id="gallery-pop1">
+                <h1 style="color: white; font-size: 30px;"> Self-balancing Robot</h1>
+                <br>
+                <img src="Images/gallery_pic1.jpg" class="hor">
+                <br><br>
+                <p style="color: white; font-size: 15px; padding-left: 50px; padding-right: 50px">
+                    Designed a self-balancing robot with
+                    Arduino Nano and MPU6050. It helped me experiment and
+                    learn in-depth about the PID Controller.
+                    <br><br>
+                    Programmed using C++ and designed all relevant circuitry.
+                </p>
+            </div>
+
+            <div id="gallery-pop2">
+                <h1 style="color: white; font-size: 30px;"> Connect 5 AI</h1>
+                <br>
+                <img src="Images/gallery_pic6.jpg" class="ver">
+                <br><br>
+                <p style="color: white; font-size: 15px; padding-left: 50px; padding-right: 50px">
+                    In grade 12, I made a Player vs AI connect 5 hardware project
+                    powered on a Raspberry Pi. This was one of my favourite projects by far. I learned
+                    from first hand experience how digital monitors worked and even a few things about human psychology.
+                    In total, the project had
+                    128 Led lights and 32 wires forming an 8x8 grid.
+
+                </p>
+            </div>
+
+            <div id="gallery-pop3">
+                <h1 style="color: white; font-size: 30px;"> Mini Quadcopter</h1>
+                <br>
+                <img src="Images/gallery_pic3.jpg" class="ver">
+                <br><br>
+                <p style="color: white; font-size: 15px; padding-left: 50px; padding-right: 50px">
+                    The Mini Quadcopter was one of the most technically
+                    challenging hardware projects I've done. Weight had to be minimized, so I chose
+                    to place the circuitry on protoboard using an MPU6050 serving as gyro and accelerometer
+                    and a Arduino Micro as its microcontroller. The drone is powered by a 3.7v lithium battery.
+
+                </p>
+            </div>
+
+            <div id="gallery-pop4">
+                <h1 style="color: white; font-size: 30px;"> Quadruped Robot</h1>
+                <br>
+                <img src="Images/gallery_pic4.jpg" class="hor">
+                <br><br>
+                <p style="color: white; font-size: 15px; padding-left: 50px; padding-right: 50px">
+                    As a child, I've always found the little Hexbugs sold in toystores to be fascinating.
+                    I wanted to figure out how it worked through hands-on experimentation. Turned out these spider-like
+                    quadrupeds
+                    walked in what is called the "Creep Gait", interesting name isn't it? With my curiosity sparked,
+                    I hopped on Amazon and ordered 12 SG90 servos and went right to work.
+                </p>
+            </div>
+
+            <div id="gallery-pop5">
+                <h1 style="color: white; font-size: 30px;"> Ping Pong Turret</h1>
+                <br>
+                <img src="Images/gallery_pic5.jpg" class="ver">
+                <br><br>
+                <p style="color: white; font-size: 15px; padding-left: 50px; padding-right: 50px">
+                    For my culminating task in grade 12 tech engineering class, I made a ping pong ball turret that
+                    was wirelessly controlled. The command is sent via ssh from a thrid party app on my mobile device,
+                    then the Raspberry Pi interprets and executes the command. The stepping motor controls the turrets
+                    rotations and the servo releases the ball from the collector.
+                </p>
+            </div>
+
+        </div>
+        <div class="close">+</div>
+    </div>
+    <script type="text/javascript" src="./gallery.js"></script>
+    <script>
+        loadGallery(5);
+    </script>
+
+    <script src="./firebase_db.js"></script>
+    <script src="./pie_chart.js"></script>
+</body>
+
+
 </html>
