@@ -13,7 +13,8 @@ function generateQuote() {
     })
     .catch(function(err) {
         console.log(err);
-        document.getElementById("quote").innerHTML = "Sorry Api.quotable.io is currently down, server not responding";
+        document.getElementById("quote").innerHTML = "API is currently under maintenance, will be available soon!";
+        document.querySelector("#author").innerHTML = "- Not available"
     });
     
 }
