@@ -57,6 +57,17 @@ function drawAvgChart()
     chart.draw(data, options);   
 }
 
+// function resize () {
+//     // change dimensions if necessary
+//     chart.draw(data, options);
+// }
+// if (window.addEventListener) {
+//     window.addEventListener('resize', resize);
+// }
+// else {
+//     window.attachEvent('onresize', resize);
+// }
+
 
 
 
