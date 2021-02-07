@@ -7,12 +7,12 @@ var quote_list = [];
 var author_list = [];
 function generateQuote() {
     // Fetches from API
-    quote_list = [];
-    author_list = [];
     fetch(url + search_word)
         .then(res => res.json())
         .then((out) => {
-            for(let j = 0; j < 15; j++) {
+            quote_list = [];
+            author_list = [];
+            for (let j = 0; j < 15; j++) {
                 quote_list.push(out.quotes[j]);
                 author_list.push(out.authors[j]);
             }
