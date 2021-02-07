@@ -16,6 +16,7 @@
     <script src="https://kit.fontawesome.com/2abb778c54.js" crossorigin="anonymous"></script>
     <script defer src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script defer src="./api_reference.js"></script>
+    <script defer src="./search_engine.js"></script>
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 
     <!-- The core Firebase JS SDK is always required and must be listed first -->
@@ -180,18 +181,19 @@
         <div data-aos="fade-up" data-aos-delay="100" data-aos-offset="300" data-aos-duration="1000"
             style="text-align:center;">
             <div class="quote-container">
+                <p id="topic" class="quote-font" style="font-size: 20px"><strong>Current topic: ability</strong></p>
+                <br>
                 <div class="quote-font" id="quote"></div>
                 <br>
                 <div class="quote-font" id="author"></div>
                 <br>
+                <br>
+                <form id="search-box" action="#form-anchor" id="form-anchor">
+                    <input autocomplete="off" id="search" type="search" value="" placeholder="Search by topic...">
+                </form>
+                <br>
+                <p style="font-size: 14px" class="quote-font">Only exact queries at this time...(update incoming)<br>For now, try ability, ambition, and courage</p>
             </div>
-            <br>
-            <!--<form class = "search-box" action="./api_reference.js" style="margin:auto;max-width:300px"> 
-                    <input type="text" placeholder="To be or..." name="search">
-                    <button type="submit">
-                        <i class="fa fa-search"></i>
-                    </button>
-                </form>-->
         </div>
     </section>
 
@@ -328,6 +330,5 @@
     <script src="./firebase_db.js"></script>
     <script src="./pie_chart.js"></script>
 </body>
-
 
 </html>

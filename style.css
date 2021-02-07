@@ -474,7 +474,7 @@ section .ring.ring3
 
 #inspiring-quote
 {
-  min-height: 50vh;
+  min-height: 60vh;
   justify-content: center;
   align-items: center;
   overflow: hidden;
@@ -490,8 +490,54 @@ section .ring.ring3
   padding: 25px 50px;
   box-shadow: 0px 20px 40px -14px rgba(0, 0, 0, 0.25);
   max-width: 70%;
+  min-height: 18vh;
   margin-left:15%;
   margin-right:15%;
+}
+
+input {
+  outline: none;
+}
+
+input[type=search] {
+  background: #ededed url(https://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 9px center;
+	border: solid 1px #ccc;
+	padding: 9px 9px 9px 18px;
+	
+	-webkit-border-radius: 11m;
+	-moz-border-radius: 11em;
+	border-radius: 11em;
+	
+	-webkit-transition: all .75s;
+	-moz-transition: all .75s;
+	transition: all .75s;
+  -webkit-appearance: textfield;
+  -webkit-box-sizing: content-box;
+  appearance: textfield;
+  box-sizing: content-box;
+  font-family: Quicksand, sans-serif;
+  font-size: 100%;
+  width: 12px;
+	color: transparent;
+	cursor: pointer;
+}
+
+input[type=search]:hover
+{
+  background-color: #ccc;
+  width: 60%;
+  padding-left: 32px;
+}
+
+input[type=search]:focus 
+{
+  width: 60%;
+  padding-left: 32px;
+  color: #000;
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 5px rgba(109,207,246,.5);
+	-moz-box-shadow: 0 0 5px rgba(109,207,246,.5);
+	box-shadow: 0 0 5px rgba(109,207,246,.5);
 }
 
 .quote-font

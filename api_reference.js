@@ -3,10 +3,12 @@
 var search_word = "ability";
 const url = "https://us-central1-fir-practice-67869.cloudfunctions.net/app/api/generate-quote/";
 // Generates a random quote from API
-const quote_list = [];
-const author_list = [];
+var quote_list = [];
+var author_list = [];
 function generateQuote() {
     // Fetches from API
+    quote_list = [];
+    author_list = [];
     fetch(url + search_word)
         .then(res => res.json())
         .then((out) => {
