@@ -16,6 +16,7 @@ function generateQuote() {
             }
             document.getElementById("quote").innerHTML = out.quotes[0];
             document.querySelector("#author").innerHTML = "- " + out.authors[0];
+            console.log("quote response received")
         })
         .catch(function (err) {
             console.log(err);
