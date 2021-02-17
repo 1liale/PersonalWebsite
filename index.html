@@ -189,11 +189,20 @@
                 <div class="quote-font" id="author"></div>
                 <br>
                 <br>
-                
-                <input autocomplete="off" id="search" type="search" onsearch="" value="" placeholder="Search by topic...">
-                
+                <div class="search-container">
+                    <input autocomplete="off" id="search" onfocus="makeVisible();"type="search" onsearch="" value="" placeholder="Search by topic...">
+                    <div class="dropdown">
+                        <button id="dropbtn"><i class="fas fa-arrow-up"></i></button>
+                        <div class="dropdown-content">
+                          <span id="by-topic"><p>Topic</p></span>
+                          <span id="by-relevance"><p>Relevance</p></span>
+                        </div>
+                    </div>
+                </div>
                 <br>
-                <p style="font-size: 14px" class="quote-font">Only exact queries at this time...(update incoming)<br>For now, try ability, ambition, and courage</p>
+                <p id="quote-info" style="font-size: 14px" class="quote-font">Google's Custom Search JSON API -> relevance search,<br>
+                Lenvenshtein Distance -> closest matching topic by appearance. <br>
+                *Note: JSON API limits 100 free queries per day. Please use with care.</p>
             </div>
         </div>
     </section>
