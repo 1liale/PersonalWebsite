@@ -1,4 +1,4 @@
-const fuzzy_url = "https://us-central1-fuzzysearch-46fc8.cloudfunctions.net/app/api/keyword-match/";
+const fuzzy_url = "https://us-central1-fuzzysearch-46fc8.cloudfunctions.net/app/api/match/";
 const custom_url = "https://customsearch.googleapis.com/customsearch/v1?cx=35ca492bccd258410&key=AIzaSyD-_xQ5-tmBRWZfNdHOyO7Nu4-GlaHW06k&q=";
 var current_word = "";
 var search_option = "topic";
