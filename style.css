@@ -327,10 +327,10 @@ section .ring.ring3
 
 .java {width: 100%;  background-color: #2196F3;} 
 .python {width: 66%; background-color: #ffdd00e8;} 
-.cpp {width: 50%; background-color: #ff7300;} 
-.csharp {width: 50%; background-color: #f44336;}
-.html-css {width: 25%; background-color: #38de3e;} 
-.js {width: 25%; background-color: #a52fb0;} 
+.c {width: 40%; background-color: #ff7300;} 
+.ts {width: 25%; background-color: #f44336;}
+.html-css {width: 66%; background-color: #38de3e;} 
+.js {width: 66%; background-color: #a52fb0;} 
 
 #gallery
 {
