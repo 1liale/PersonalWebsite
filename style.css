@@ -91,6 +91,7 @@
   text-align: center;
   border-radius: 10px;
   padding: 2px 0;
+  font-weight: bold;
   
   /* Position the tooltip */
   position: absolute;
@@ -260,7 +261,7 @@ section .ring.ring3
 .description 
 {
   position: relative;
-  top: 15%;
+  margin-top: 10vh;
   justify-content: center;
   align-items: center;
 }
