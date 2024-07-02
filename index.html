@@ -19,7 +19,6 @@
 </head>
 
 <body>
-    <script src="./timeme.js"></script>
     <section id="intro">
         <div class="container1">
             <div class="text-display">
@@ -61,52 +60,34 @@
         <div class="description">
             <div data-aos="fade-up" data-aos-delay="100" data-aos-offset="300" data-aos-duration="1000"
                 style="text-align:center;">
-                <h1 class="title-font">About Me</h1>
+                <h1 class="title-font">Hey there! 😄</h1>
             </div>
 
             <br>
 
             <div data-aos="fade-up" data-aos-delay="100" data-aos-offset="300" data-aos-duration="1000"
-                style="text-align:center;" class="content">
-                <p class="about-font"> Hi my name is Alex, I'm a third-year computer science student studying at the University of Waterloo! 
-                    <br><br>
-                    I like all things tech related with a primary focus on Cloud and Fullstack Web Development although I have taken an interest learning ML recently as well.
-                    I'm familiar with all major frontend frameworks (Next.js, Angular, Sveltekit) and have completed the AWS Certified Developer - Associate certification.
-                    <br><br>
-                    I would describe myself as free-spirited and an outdoors person. I'm currently part of the school's running club and take Muay Thai classes. Growing up,
-                    I was very much into robotics and more generally solving engineering problems. Below are some of the projects I've done in my early years that have inspired me to pursue
-                    computer science as a major and a career in tech!
-                    <br><br>
-                    Thanks for stopping by and feel free to reach out if you'd like to connect! I'm open to new experiences and opportunities :D
+                style="text-align:left;" class="content">
+                <p class="about-font">              
+                    Current computer science student at the University of Waterloo. <br>
+
+                    I am a results-driven developer with a strong passion for tech and experienced in cloud and web development with interests in ML/AI. <br>
+                    <br>
+                    In the past, I've worked with many major web frameworks like React + Vite, Next, Angular, and SvelteKit and developed REST APIs and backend services with
+                    Go, Python, and Javascript (i.e Gin, FastApi, Express etc). In keeping with the times, I've also gained a familiar understanding of the theories behind
+                    the various algorithms and models that are used in ML through personal projects and course works. <br>
+                    <br>
+                    Work aside, I am big into outdoors activities like dragon boat and snowboarding and enjoy going on fishing trips in the summer. <br>
+                    <br>
+                    Thanks for stopping by and feel free to connect (
+
+                    <a href="https://www.linkedin.com/in/alex-li-3b7810165/"><i class="fab fa-linkedin  tooltip">
+                        <span class="tooltiptext">Linkedin</span>
+                    </i></a> 
+                    <a href="mailto:a336li@uwaterloo.ca"><i class="fas fa-envelope-square tooltip">
+                            <span class="tooltiptext">Email</span>
+                        </i></a>
+                    )
                 </p>
-            </div>
-        </div>
-    </section>
-
-    <section id="gallery">
-        <div data-aos="fade-up" data-aos-delay="100" data-aos-offset="300" data-aos-duration="1000"
-            style="text-align:center;">
-            <h1 class="title-font">Hardware Projects</h1>
-        </div>
-
-        <div data-aos="fade-up" data-aos-delay="100" data-aos-offset="300" data-aos-duration="1000"
-            style="text-align:center;">
-            <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true }'>
-                <div class="gallery-cell" id="cell3">
-                    <img src="Images/gallery_pic3.jpg">
-                </div>
-                <div class="gallery-cell" id="cell2">
-                    <img src="Images/gallery_pic6.jpg">
-                </div>
-                <div class="gallery-cell" id="cell1">
-                    <img src="Images/gallery_pic1.jpg">
-                </div>
-                <div class="gallery-cell" id="cell5">
-                    <img src="Images/gallery_pic5.jpg">
-                </div>
-                <div class="gallery-cell" id="cell4">
-                    <img src="Images/gallery_pic4.jpg">
-                </div>
             </div>
         </div>
     </section>
@@ -123,84 +104,6 @@
     <script>
         AOS.init();
     </script>
-
-    <div class="bg-modal">
-        <div class="modal-content">
-
-            <div id="gallery-pop3">
-                <h1 style="color: white; font-size: 30px;"> Mini Quadcopter</h1>
-                <br>
-                <img src="Images/gallery_pic3.jpg" class="ver">
-                <br><br>
-                <p style="color: white; font-size: 15px; padding-left: 50px; padding-right: 50px">
-                    The Mini Quadcopter was one of my favourite hardware projects to have worked on. The frame is 3D printed, with the whole device
-                    taking on an ultralight appeal weighing only 73g in total. I had a lot of fun building this project and would definitely consider building a larger 
-                    prototype in the future. 
-                </p>
-            </div>
-
-            <div id="gallery-pop2">
-                <h1 style="color: white; font-size: 30px;"> Othello/Reversi AI</h1>
-                <br>
-                <img src="Images/gallery_pic6.jpg" class="ver">
-                <br><br>
-                <p style="color: white; font-size: 15px; padding-left: 50px; padding-right: 50px">
-                    In grade 12, I made a Player vs Othello AI game that was run on a Raspberry Pi. This was one of my favourite projects by far. I learned
-                    from first hand experience how digital monitors worked and even a few things about human psychology.
-                    In total, the project had 128 Led lights and 32 wires forming an 8x8 grid.
-                </p>
-            </div>
-
-            <div id="gallery-pop1">
-                <h1 style="color: white; font-size: 30px;"> Self-balancing Robot</h1>
-                <br>
-                <img src="Images/gallery_pic1.jpg" class="hor">
-                <br><br>
-                <p style="color: white; font-size: 15px; padding-left: 50px; padding-right: 50px">
-                    Designed a self-balancing robot with
-                    Arduino Nano and MPU6050. It helped me experiment and
-                    learn in-depth about the PID Controller.
-                    <br><br>
-                    Programmed using C++ and designed all relevant circuitry.
-                </p>
-            </div>
-
-            <div id="gallery-pop4">
-                <h1 style="color: white; font-size: 30px;"> Quadruped Robot</h1>
-                <br>
-                <img src="Images/gallery_pic4.jpg" class="hor">
-                <br><br>
-                <p style="color: white; font-size: 15px; padding-left: 50px; padding-right: 50px">
-                    I've always found the little Hexbugs sold in toystores to be fascinating and wanted to figure out how they worked.
-                    Through hands on experimentation, I was able to learn a lot about these creepers; the way they move about is called the "Creep Gait", which involves
-                    the retraction of the body towards the center of mass every time a leg is lifted. While it was a daunting task at first, I overcame various challenges and learned 
-                    much on the art of power management and improved my soldering and programming skills. 
-                </p>
-            </div>
-
-            <div id="gallery-pop5">
-                <h1 style="color: white; font-size: 30px;"> Ping Pong Turret</h1>
-                <br>
-                <img src="Images/gallery_pic5.jpg" class="ver">
-                <br><br>
-                <p style="color: white; font-size: 15px; padding-left: 50px; padding-right: 50px">
-                    For my culminating task in grade 12 tech engineering class, I made a ping pong ball turret that
-                    was wirelessly controlled. The command is sent via ssh from a thrid party app on my mobile device,
-                    then the Raspberry Pi interprets and executes the command. The stepping motor controls the turrets
-                    rotations and the servo releases the ball from the collector.
-                </p>
-            </div>
-
-        </div>
-        <div class="close">+</div>
-    </div>
-    <script type="text/javascript" src="./gallery.js"></script>
-    <script>
-        loadGallery(5);
-    </script>
-
-    <script src="./firebase_db.js"></script>
-    <script src="./pie_chart.js"></script>
 </body>
 
 </html>
